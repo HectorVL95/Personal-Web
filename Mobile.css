@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:'Fjalla One', sans-serif;;
+}
+body{
+    min-width: 320px;
+    height: auto;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: rgba(56, 49, 49, 0.5);
+    opacity: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header div p{
+    margin-right: 10px;
+}
+header div button{
+    position: relative;
+    bottom: 2.5px;
+}
+.drop-down{
+    width: 10px;
+    height: auto;
+}
+.picture--intro{
+    position: relative;
+}
+.title{
+    position: absolute;
+    padding: 10px;
+    top: 300px;
+}
+.title h1, h3{
+    font-size: 1.7rem;
+    color: rgb(242, 251, 255);
+}
+.picture--intro img{
+    width: 100%;
+    height: auto;
+}
+.about-me{
+    padding: 15px;
+}
+.about-me h1{
+    text-align: center;
+    color: black;
+}
