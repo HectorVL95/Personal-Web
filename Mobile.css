@@ -74,6 +74,8 @@ header div button{
     text-align: center;
     color: black;
     font-size: 2rem;
+    text-decoration: underline blue;
+    text-underline-offset: 10px;
 }
 .about-me p{
     margin-top: 15px;
@@ -97,6 +99,8 @@ header div button{
 .offer{
     background-color: var(--lightgray);
     padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
 }
 .offer h1{
     text-align: center;
@@ -108,6 +112,11 @@ header div button{
     background-color: var(--gray);
     display: flex;
     padding: 10px;
+    margin-top: 20px;
+    align-self: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .skills-container .icon-container{
     width: 30px;
@@ -125,5 +134,40 @@ header div button{
     transform: rotate(-45deg);
 }
 .skills-description .skill{
-    
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+.technologies {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.technologies h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.technologies article{
+    background-color: var(--gray);
+    width: 150px;
+    height: auto;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.54);
+}
+.technologies article img{
+    width: 100px;
+    height: auto;
+    align-self: center;
+}
+.technologies article p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.7rem;
 }
