@@ -1,3 +1,8 @@
+:root{
+    --lightgray: rgb(248, 246, 246);
+    --gray: rgb(204, 202, 202);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +14,11 @@ html{
 }
 body{
     min-width: 320px;
+    max-width: 1080px;
     height: auto;
 }
+
+/*Header*/
 header{
     width: 100%;
     height: auto;
@@ -36,6 +44,8 @@ header div button{
     width: 10px;
     height: auto;
 }
+/*Main section*/
+/*Picture and name section */
 .picture--intro{
     position: relative;
 }
@@ -52,10 +62,68 @@ header div button{
     width: 100%;
     height: auto;
 }
+
+/*About me Section */
 .about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 15px;
 }
 .about-me h1{
     text-align: center;
     color: black;
+    font-size: 2rem;
+}
+.about-me p{
+    margin-top: 15px;
+    font-size: 1.7rem;
+    line-height: 30px;
+}
+.hobby-images{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.hobby-images img{
+    width: 150px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 15px;
+    
+}
+
+/*What I Offer Section*/
+.offer{
+    background-color: var(--lightgray);
+    padding: 30px 15px;
+}
+.offer h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.skills-container{
+    width: 250px;
+    height: auto;
+    background-color: var(--gray);
+    display: flex;
+    padding: 10px;
+}
+.skills-container .icon-container{
+    width: 30px;
+    height: 30px;
+    background-color: azure;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.skills-container .icon-container img{
+    width: 20px;
+    height: auto;
+    transform: rotate(-45deg);
+}
+.skills-description .skill{
+    
 }
