@@ -1,0 +1,12 @@
+html{
+    font-size: 90%;
+}
+.technologies div{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.technologies .git-github{
+    align-self: center;
+    position: relative;
+    left: 0;
+}

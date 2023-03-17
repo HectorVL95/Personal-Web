@@ -16,17 +16,24 @@ body{
     min-width: 320px;
     max-width: 1080px;
     height: auto;
+    margin: 0 auto;
 }
 
 /*Header*/
 header{
     width: 100%;
     height: auto;
-    background-color: rgba(56, 49, 49, 0.5);
+    background-image: url(./assets/cool-white.avif);
     opacity: 2;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
+}
+.inactive-navbar{
+    display: none;
+}
+header p{
+    font-size: 1.8rem;
 }
 header div{
     display: flex;
@@ -34,33 +41,63 @@ header div{
     justify-content: center;
 }
 header div p{
-    margin-right: 10px;
+    margin-right: 5px;
+    font-size: 1.5rem;
 }
 header div button{
     position: relative;
     bottom: 2.5px;
+    width: 20px;
+    height: auto;
+}
+header div button img{
+    width: 20px;
+    height: auto;
 }
 .drop-down{
     width: 10px;
     height: auto;
 }
+header div nav{
+    position: absolute;
+    display: flex;
+    top: 40px;
+    flex-direction: column;
+    background-color: var(--lightgray);
+    border: 1px solid black;
+}
+header div nav a{
+    margin: 10px;
+    color: black;
+    font-size: 1.3rem;
+
+}
+
 /*Main section*/
 /*Picture and name section */
 .picture--intro{
-    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-image: url(./assets/cool-white.avif);
+
 }
 .title{
-    position: absolute;
     padding: 10px;
-    top: 300px;
+
 }
-.title h1, h3{
+.title p{
     font-size: 1.7rem;
-    color: rgb(242, 251, 255);
+    color: black;
 }
 .picture--intro img{
-    width: 100%;
+    width: 120px;
     height: auto;
+}
+h1{
+    text-decoration: underline grey;
+    text-underline-offset: 10px;
+    margin-bottom: 25px;
 }
 
 /*About me Section */
@@ -74,10 +111,9 @@ header div button{
     text-align: center;
     color: black;
     font-size: 2rem;
-    text-decoration: underline blue;
-    text-underline-offset: 10px;
 }
 .about-me p{
+    text-align: center;
     margin-top: 15px;
     font-size: 1.7rem;
     line-height: 30px;
@@ -138,17 +174,25 @@ header div button{
     font-size: 1.6rem;
     margin-bottom: 5px;
 }
+
+/*Technologies*/
 .technologies {
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 .technologies h1{
     text-align: center;
     font-size: 2rem;
 }
-.technologies article{
+.technologies div{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.technologies div article{
+    align-self: center;
     background-color: var(--gray);
     width: 150px;
     height: auto;
@@ -161,13 +205,65 @@ header div button{
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.54);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.54);
 }
-.technologies article img{
+.technologies div article:hover{
+    background-color: var(--lightgray);
+    cursor: pointer;
+}
+
+.technologies div article img{
     width: 100px;
     height: auto;
     align-self: center;
 }
-.technologies article p{
+.technologies div article p{
     margin-top: 10px;
     text-align: center;
     font-size: 1.7rem;
+}
+
+/*Portfolio*/
+.portfolio{
+    background-color: var(--lightgray);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio h1{
+    text-align: center;
+    font-size: 2rem
+  
+}
+.portfolio article{
+    margin-top: 25px;
+    width: 250px;
+    height: auto;
+    background-color: var(--gray);    
+    padding: 20px;
+    align-self: center;
+}
+.portfolio article p{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 30px;
+}
+
+/* Contact */
+.contact{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contact h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.contact div{
+    display: flex;
+    align-self: center;
+    margin-bottom: 25px;
+
+}
+.contact div img{
+    width: 25px;
+    height: auto;
 }

@@ -1,0 +1,50 @@
+
+/*Header*/
+header div p, button{
+    display: none;
+}
+.inactive-navbar{
+    display: flex;
+    flex-direction: row;
+}
+header div nav{
+    position: relative;
+
+    top: 1px;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+}
+header div nav a{
+    margin: 0 5px;
+    color: black;
+    font-size: 1.3rem;
+}
+header div nav a:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+/*Title*/
+.title div{
+    align-self: center;
+}
+
+/*About me*/
+.hobby-images{
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+/*Technologies*/
+.technologies div{
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-self: center;
+}
+.technologies .git-github{
+    align-self: center;
+    position: relative;
+    left: 0px;
+}
