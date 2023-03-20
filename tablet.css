@@ -33,8 +33,11 @@ header div nav a:hover{
 /*About me*/
 .hobby-images{
     flex-direction: row;
-    justify-content: space-evenly;
+    padding: 30px;
 
+}
+.hobby-images img{
+    margin: 0 25px;
 }
 
 /*Technologies*/
