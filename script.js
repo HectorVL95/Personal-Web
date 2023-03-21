@@ -4,8 +4,22 @@ var navbarElement = document.querySelectorAll('.navbar-element')
 var techDescription = document.querySelectorAll('.tech-description')
 
 /*Hobbies Pictures */
-var hobbyImage = document.querySelectorAll('.hobby-image')
-var hobbyBigPics = document.querySelectorAll('.hobby-big-pics')
+var bmx = document.querySelector('.bmx')
+var htmlCssCert = document.querySelector('.htmlCssCert')
+var book = document.querySelector('.book')
+var jsCert = document.querySelector('.jsCert')
+var htmlCode = document.querySelector('.htmlCode')
+var respDesCert = document.querySelector('.respDesCert')
+
+/*Hobby Big Pictures*/
+var hobbiesBigPics = document.querySelectorAll('.hobbies-big-pics')
+var bmxBigPic = document.querySelector('.bmxBigPic')
+var htmlCssCertBigPic = document.querySelector('.htmlCssCertBigPic')
+var bookBigPic = document.querySelector('.bookBigPic')
+var jsCertBigPic = document.querySelector('.jsCertBigPic')
+var htmlCodeBigPic = document.querySelector('.htmlCodeBigPic')
+var respDesCertBigPic = document.querySelector('.respDesCertBigPic')
+
 
 /*Technologies */
 var htmlTech = document.querySelector('.html-tech')
@@ -26,6 +40,7 @@ var techdescCloseBtn = document.querySelectorAll('.closebtn')
 var darken = document.querySelector('.darken')
 var darkenToggle = document.querySelector('.darken-inactive')
 
+/* AddEventListeners */
 explorebtn.addEventListener('click', showNavBarList)
 htmlTech.addEventListener('click', showhtmldescription)
 cssTech.addEventListener('click', showCSSdescription)
@@ -33,6 +48,14 @@ jsTech.addEventListener('click', showJsdescription)
 gitTech.addEventListener('click', showGitdescription)
 githubTech.addEventListener('click', showGitHubdescription)
 darken.addEventListener('click', closeTechDescription)
+bmx.addEventListener('click', showBmxPicture)
+htmlCssCert.addEventListener('click', showHtmlCssCert)
+book.addEventListener('click', showBook)
+jsCert.addEventListener('click', showjsCert)
+htmlCode.addEventListener('click', showHtmlCode)
+respDesCert.addEventListener('click', showrespDesCert)
+
+
 
 function showNavBarList(){
     navbar.classList.toggle('inactive-navbar')
@@ -45,18 +68,18 @@ navbarElement.forEach(navbarElement => {
 });
 
 
-hobbyImage.forEach(hobbyImage => {
+
+/*hobbyImage.forEach(hobbyImage => {
     hobbyImage.addEventListener('click', showHobbyImages)
     function showHobbyImages(e){
-        for(var i=1; i = hobbyBigPics.length - 1; i++){
-            if (e.target === hobbyBigPics[0]){
-                hobbyBigPics[0].classList.remove('hobbies-inactive')
-            }else if(e.target === hobbyBigPics[1]){
-                hobbyBigPics[1].classList.remove('hobbies-inactive')
+        for(var i=0; i < hobbyBigPics.length; i++){
+            if (e.target !== hobbyBigPics[i]){
+                hobbyBigPics[i].classList.remove('hobbies-inactive')
             }
         }
     }
-});
+});*/
+
 
 function showhtmldescription(){
     htmlDescription.classList.toggle('inactive-tech-description')
@@ -99,6 +122,62 @@ function showGitHubdescription(){
     darken.classList.remove('darken-inactive')
 
 }
+function showBmxPicture(){
+    bmxBigPic.classList.toggle('hobbies-inactive')
+    htmlCssCertBigPic.classList.add('hobbies-inactive')
+    bookBigPic.classList.add('hobbies-inactive')
+    jsCertBigPic.classList.add('hobbies-inactive')
+    htmlCodeBigPic.classList.add('hobbies-inactive')
+    respDesCertBigPic.classList.add('hobbies-inactive')
+    darken.classList.remove('darken-inactive')
+
+}
+function showHtmlCssCert(){
+    bmxBigPic.classList.add('hobbies-inactive')
+    htmlCssCertBigPic.classList.toggle('hobbies-inactive')
+    bookBigPic.classList.add('hobbies-inactive')
+    jsCertBigPic.classList.add('hobbies-inactive')
+    htmlCodeBigPic.classList.add('hobbies-inactive')
+    respDesCertBigPic.classList.add('hobbies-inactive')
+    darken.classList.remove('darken-inactive') 
+}
+function showBook(){
+    bmxBigPic.classList.add('hobbies-inactive')
+    htmlCssCertBigPic.classList.add('hobbies-inactive')
+    bookBigPic.classList.toggle('hobbies-inactive')
+    jsCertBigPic.classList.add('hobbies-inactive')
+    htmlCodeBigPic.classList.add('hobbies-inactive')
+    respDesCertBigPic.classList.add('hobbies-inactive')
+    darken.classList.remove('darken-inactive')     
+}
+function showjsCert(){
+    bmxBigPic.classList.add('hobbies-inactive')
+    htmlCssCertBigPic.classList.add('hobbies-inactive')
+    bookBigPic.classList.add('hobbies-inactive')
+    jsCertBigPic.classList.toggle('hobbies-inactive')
+    htmlCodeBigPic.classList.add('hobbies-inactive')
+    respDesCertBigPic.classList.add('hobbies-inactive')
+    darken.classList.remove('darken-inactive')     
+}
+function showHtmlCode(){
+    bmxBigPic.classList.add('hobbies-inactive')
+    htmlCssCertBigPic.classList.add('hobbies-inactive')
+    bookBigPic.classList.add('hobbies-inactive')
+    jsCertBigPic.classList.add('hobbies-inactive')
+    htmlCodeBigPic.classList.toggle('hobbies-inactive')
+    respDesCertBigPic.classList.add('hobbies-inactive')
+    darken.classList.remove('darken-inactive')      
+}
+function showrespDesCert(){
+    bmxBigPic.classList.add('hobbies-inactive')
+    htmlCssCertBigPic.classList.add('hobbies-inactive')
+    bookBigPic.classList.add('hobbies-inactive')
+    jsCertBigPic.classList.add('hobbies-inactive')
+    htmlCodeBigPic.classList.add('hobbies-inactive')
+    respDesCertBigPic.classList.toggle('hobbies-inactive')
+    darken.classList.remove('darken-inactive')    
+}
+
 
 
 /*Closing technologies description and darken by using the CloseBtn */ 
@@ -116,6 +195,14 @@ techdescCloseBtn.forEach(techdescCloseBtn =>{
     function hideDarken (){
         darken.classList.add('darken-inactive')
     }
+    techdescCloseBtn.addEventListener('click', hideHobbiesBigPics)
+    function hideHobbiesBigPics(e){
+        for(var i = 0; i < hobbiesBigPics.length; i++){
+            if (e.target !== hobbiesBigPics[i]){
+                hobbiesBigPics[i].classList.add('hobbies-inactive')
+            }
+        }
+    }
     })
 
 /*Closing Technologies description by Clicking outside of the description*/
@@ -123,6 +210,11 @@ function closeTechDescription(e){
     for(var i=0; i < techDescription.length; i++){
         if(e.target !== techDescription[i]){
             techDescription[i].classList.add('inactive-tech-description')
+        }
+    }
+    for(var i = 0; i < hobbiesBigPics.length; i++){
+        if(e.target !== hobbiesBigPics[i]){
+            hobbiesBigPics[i].classList.add('hobbies-inactive')
         }
     }
     darken.classList.add('darken-inactive')

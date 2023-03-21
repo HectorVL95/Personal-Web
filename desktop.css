@@ -1,6 +1,13 @@
 html{
     font-size: 90%;
 }
+
+/*About me section*/
+.about-me article img{
+    width: 600px;
+    height: auto;
+ }
+
 .technologies div{
     flex-direction: row;
     flex-wrap: nowrap;
@@ -10,3 +17,4 @@ html{
     position: relative;
     left: 0;
 }
+

@@ -147,8 +147,32 @@ h1{
 .hobby-images img:hover{
     cursor: pointer;
 }
+.about-me article{
+    position: fixed;
+    z-index: 10;
+    bottom: 250px;
+    align-self: center;
+    
+}
+.about-me article img{
+    width: 280px;
+    height: auto;
+ }
 .hobbies-inactive{
     display: none;
+}
+.about-me article .closebtn{
+    width: 25px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.about-me article .closebtn:hover{
+    cursor: pointer;
+}
+.about-me article .closebtn:active{
+    background-color: grey;
 }
 
 /*What I Offer Section*/
