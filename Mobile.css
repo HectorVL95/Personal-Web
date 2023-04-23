@@ -320,12 +320,32 @@ h1{
     font-size: 2rem
   
 }
+.websites{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .portfolio article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 25px;
-    width: 250px;
+    width: 230px;
     height: auto;
     background-color: var(--gray);    
     padding: 20px;
+    align-self: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.portfolio article:hover{
+    cursor: pointer;
+    background-color: var(--lightgray);
+}
+.portfolio article img{
+    width: 130px;
+    height: auto;
     align-self: center;
 }
 .portfolio article p{

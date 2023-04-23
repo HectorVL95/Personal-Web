@@ -18,3 +18,7 @@ html{
     left: 0;
 }
 
+.websites{
+    flex-direction: row;
+}
+
