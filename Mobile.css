@@ -161,6 +161,9 @@ h1{
 .hobbies-inactive{
     display: none;
 }
+.hobbies-big-pics{
+    
+}
 .about-me article .closebtn{
     width: 25px;
     height: auto;
@@ -173,6 +176,9 @@ h1{
 }
 .about-me article .closebtn:active{
     background-color: grey;
+}
+.bookBigPic > img{
+    max-width: 400px;
 }
 
 /*What I Offer Section*/
@@ -277,7 +283,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-self: center;
-    top: 250px;
+    top: 100px;
     z-index: 10;
 }
 .tech-description div{

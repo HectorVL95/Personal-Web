@@ -17,7 +17,9 @@ html{
     position: relative;
     left: 0;
 }
-
+.hobbies-big-pics{
+    top:80px;
+}
 .websites{
     flex-direction: row;
 }
