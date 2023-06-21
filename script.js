@@ -27,6 +27,7 @@ var cssTech = document.querySelector('.css-tech')
 var jsTech = document.querySelector('.js-tech')
 var gitTech = document.querySelector('.git-tech')
 var githubTech = document.querySelector('.github-tech')
+var reactTech = document.querySelector('.react-tech')
 
 /*Technologies Description */
 var htmlDescription = document.querySelector('#html-description')
@@ -34,6 +35,7 @@ var cssDescription = document.querySelector('#css-description')
 var jsDescription = document.querySelector('#js-description')
 var gitDescription = document.querySelector('#git-description')
 var gitHubDescription = document.querySelector('#gitHub-description')
+var reactDescription = document.querySelector('#react-description')
 var techdescCloseBtn = document.querySelectorAll('.closebtn')
  
 /*Darken Website */
@@ -47,6 +49,7 @@ cssTech.addEventListener('click', showCSSdescription)
 jsTech.addEventListener('click', showJsdescription)
 gitTech.addEventListener('click', showGitdescription)
 githubTech.addEventListener('click', showGitHubdescription)
+reactTech.addEventListener('click', showReactdescription)
 darken.addEventListener('click', closeTechDescription)
 bmx.addEventListener('click', showBmxPicture)
 htmlCssCert.addEventListener('click', showHtmlCssCert)
@@ -54,6 +57,7 @@ book.addEventListener('click', showBook)
 jsCert.addEventListener('click', showjsCert)
 htmlCode.addEventListener('click', showHtmlCode)
 respDesCert.addEventListener('click', showrespDesCert)
+
 
 
 
@@ -87,6 +91,7 @@ function showhtmldescription(){
     jsDescription.classList.add('inactive-tech-description')
     gitDescription.classList.add('inactive-tech-description')
     gitHubDescription.classList.add('inactive-tech-description')
+    reactTech.classList.add('inactive-tech-description')
     darken.classList.remove('darken-inactive')
 }
 function showCSSdescription(){
@@ -95,6 +100,7 @@ function showCSSdescription(){
     jsDescription.classList.add('inactive-tech-description')
     gitDescription.classList.add('inactive-tech-description')
     gitHubDescription.classList.add('inactive-tech-description')
+    reactTech.classList.add('inactive-tech-description')
     darken.classList.remove('darken-inactive')
 }
 function showJsdescription(){
@@ -103,6 +109,7 @@ function showJsdescription(){
     htmlDescription.classList.add('inactive-tech-description')
     gitDescription.classList.add('inactive-tech-description')
     gitHubDescription.classList.add('inactive-tech-description')
+    reactTech.classList.add('inactive-tech-description')
     darken.classList.remove('darken-inactive')
 }
 function showGitdescription(){
@@ -111,6 +118,7 @@ function showGitdescription(){
     cssDescription.classList.add('inactive-tech-description')
     htmlDescription.classList.add('inactive-tech-description')
     gitHubDescription.classList.add('inactive-tech-description')
+    reactTech.classList.add('inactive-tech-description')
     darken.classList.remove('darken-inactive')
 }
 function showGitHubdescription(){
@@ -119,8 +127,17 @@ function showGitHubdescription(){
     jsDescription.classList.add('inactive-tech-description')
     cssDescription.classList.add('inactive-tech-description')
     htmlDescription.classList.add('inactive-tech-description')
+    reactTech.classList.add('inactive-tech-description')
     darken.classList.remove('darken-inactive')
-
+}
+function showReactdescription(){
+    reactDescription.classList.toggle('inactive-tech-description')
+    gitDescription.classList.add('inactive-tech-description')
+    gitHubDescription.classList.add('inactive-tech-description')
+    jsDescription.classList.add('inactive-tech-description')
+    cssDescription.classList.add('inactive-tech-description')
+    htmlDescription.classList.add('inactive-tech-description')
+    darken.classList.remove('darken-inactive')
 }
 function showBmxPicture(){
     bmxBigPic.classList.toggle('hobbies-inactive')
